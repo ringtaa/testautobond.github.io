@@ -1,9 +1,9 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-local Workspace = game:GetService("Workspace")
-local Lighting = game:GetService("Lighting")
+local Camera = workspace.CurrentCamera
 local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Window = WindUI:CreateWindow({
@@ -17,25 +17,30 @@ local Window = WindUI:CreateWindow({
 })
 
 Window:EditOpenButton({
-    Title = "Open The Script",
-    Icon = "monitor",
+    Title = "Open RINGTA SCRIPTS",
+    Icon = "pointer",
     CornerRadius = UDim.new(0, 6),
     StrokeThickness = 2,
-    Color = ColorSequence.new(Color3.fromRGB(30, 30, 30), Color3.fromRGB(255, 255, 255)),
+    Color = ColorSequence.new(Color3.fromRGB(200, 0, 255), Color3.fromRGB(0, 200, 255)),
     Draggable = true,
 })
 
 local Tabs = {
     Main = Window:Tab({ Title = "Main", Icon = "star" }),
+    Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
+    Bring = Window:Tab({ Title = "Bring Items", Icon = "package" }),
+    Hitbox = Window:Tab({ Title = "Hitbox", Icon = "target" }),
+    AutoDays = Window:Tab({ Title = "Auto Farm", Icon = "sun" }),
+    KillAll = Window:Tab({ Title = "Kill All Mobs", Icon = "skull" }),
+    Misc = Window:Tab({ Title = "Misc", Icon = "gift" }),
     Esp = Window:Tab({ Title = "Esp", Icon = "eye" }),
-    AutoBlock = Window:Tab({ Title = "Auto Block", Icon = "shield" }),
-    Misc = Window:Tab({ Title = "Misc", Icon = "hammer" }),
     Credits = Window:Tab({ Title = "Credits", Icon = "award" })
 }
 
 
-Tabs.Main:Toggle({
-    Title = "Enable Inf Stamina",
+
+Tabs.AutoDays:Toggle({
+    Title = "Enable Cut All Trees",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -43,23 +48,23 @@ Tabs.Main:Toggle({
 })
 
 
-Tabs.Main:Toggle({
-    Title = "Enable Auto Block",
+Tabs.AutoDays:Toggle({
+    Title = "Enable Bring All Items",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
     end,
 })
 
-Tabs.Main:Button({
-    Title = "Get All Items",
+Tabs.AutoDays:Button({
+    Title = "Kill Aura",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
 })
 
-Tabs.Main:Button({
-    Title = "Auto Punch Killers",
+Tabs.AutoDays:Button({
+    Title = "Godmode At Night",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
