@@ -40,7 +40,7 @@ local Tabs = {
 
 
 Tabs.AutoDays:Toggle({
-    Title = "Enable Cut All Trees",
+    Title = "TP To All Metors",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -49,7 +49,7 @@ Tabs.AutoDays:Toggle({
 
 
 Tabs.AutoDays:Toggle({
-    Title = "Enable Bring All Items",
+    Title = "Enable Ultra Bring All Items",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -57,14 +57,14 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Button({
-    Title = "Kill Aura",
+    Title = "Kill Aura Fast",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
 })
 
 Tabs.AutoDays:Button({
-    Title = "Godmode At Night",
+    Title = "Get All Secret Admin Items",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
