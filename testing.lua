@@ -30,7 +30,7 @@ local Tabs = {
     Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
     Bring = Window:Tab({ Title = "Bring Items", Icon = "package" }),
     Hitbox = Window:Tab({ Title = "Hitbox", Icon = "target" }),
-    AutoDays = Window:Tab({ Title = "Auto Farm", Icon = "sun" }),
+    AutoDays = Window:Tab({ Title = "Auto Day Farm", Icon = "sun" }),
     KillAll = Window:Tab({ Title = "Kill All Mobs", Icon = "skull" }),
     Misc = Window:Tab({ Title = "Misc", Icon = "gift" }),
     Esp = Window:Tab({ Title = "Esp", Icon = "eye" }),
