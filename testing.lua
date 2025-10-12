@@ -28,19 +28,19 @@ Window:EditOpenButton({
 local Tabs = {
     Main = Window:Tab({ Title = "Main", Icon = "star" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
-    Bring = Window:Tab({ Title = "Bring Items", Icon = "package" }),
-    Hitbox = Window:Tab({ Title = "Hitbox", Icon = "target" }),
+    Bring = Window:Tab({ Title = "Bring All Items", Icon = "package" }),
+    Hitbox = Window:Tab({ Title = "Troll Other Players", Icon = "target" }),
     AutoDays = Window:Tab({ Title = "Auto Day Farm", Icon = "sun" }),
-    KillAll = Window:Tab({ Title = "Kill All Mobs", Icon = "skull" }),
-    Misc = Window:Tab({ Title = "Misc", Icon = "gift" }),
-    Esp = Window:Tab({ Title = "Esp", Icon = "eye" }),
+    KillAll = Window:Tab({ Title = "Godmode", Icon = "skull" }),
+    Misc = Window:Tab({ Title = "Bypass Anticheat", Icon = "gift" }),
+    Esp = Window:Tab({ Title = "Diamond Farm", Icon = "eye" }),
     Credits = Window:Tab({ Title = "Credits", Icon = "award" })
 }
 
 
 
 Tabs.AutoDays:Toggle({
-    Title = "Enable Godmode Invincible",
+    Title = "Enable Godmode",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -49,7 +49,7 @@ Tabs.AutoDays:Toggle({
 
 
 Tabs.AutoDays:Toggle({
-    Title = "Enable Bring All New Items",
+    Title = "Enable Invisible Mode",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -57,14 +57,14 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Button({
-    Title = "Auto Tame All Animals",
+    Title = "Auto Rescue All Kids",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
 })
 
 Tabs.AutoDays:Button({
-    Title = "Instant Get 100 Diamonds",
+    Title = "Diamond Farm Fast",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
