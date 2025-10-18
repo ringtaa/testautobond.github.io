@@ -10,7 +10,7 @@ local Window = WindUI:CreateWindow({
     Folder = "Ringta Scripts",
     Title = "RINGTA SCRIPTS",
     Icon = "star",
-    Author = "RINGTA and BUBLIK6241",
+    Author = "discord.gg/ringta",
     Theme = "Dark",
     Size = UDim2.fromOffset(500, 350),
     HasOutline = true,
@@ -26,15 +26,13 @@ Window:EditOpenButton({
 })
 
 local Tabs = {
-    Main = Window:Tab({ Title = "Main", Icon = "star" }),
+    Main = Window:Tab({ Title = "Dupe (BETA)", Icon = "star" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
     Bring = Window:Tab({ Title = "Bring All Items", Icon = "package" }),
-    Hitbox = Window:Tab({ Title = "Troll Other Players", Icon = "target" }),
     AutoDays = Window:Tab({ Title = "Auto Day Farm", Icon = "sun" }),
     KillAll = Window:Tab({ Title = "Godmode", Icon = "skull" }),
     Misc = Window:Tab({ Title = "Bypass Anticheat", Icon = "gift" }),
     Esp = Window:Tab({ Title = "Diamond Farm", Icon = "eye" }),
-    Credits = Window:Tab({ Title = "Credits", Icon = "award" })
 }
 
 
@@ -49,7 +47,7 @@ Tabs.AutoDays:Toggle({
 
 
 Tabs.AutoDays:Toggle({
-    Title = "Enable Invisible Mode",
+    Title = "Enable Troll Other Players",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -57,7 +55,7 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Button({
-    Title = "Auto Rescue All Kids",
+    Title = "Auto Save All Children",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
