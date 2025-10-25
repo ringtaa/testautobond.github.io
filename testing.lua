@@ -26,10 +26,10 @@ Window:EditOpenButton({
 })
 
 local Tabs = {
-    Main = Window:Tab({ Title = "Dupe (BETA)", Icon = "star" }),
+    Main = Window:Tab({ Title = "Update Party", Icon = "star" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
     Bring = Window:Tab({ Title = "Bring All Items", Icon = "package" }),
-    AutoDays = Window:Tab({ Title = "Auto Day Farm", Icon = "sun" }),
+    AutoDays = Window:Tab({ Title = "Auto", Icon = "sun" }),
     KillAll = Window:Tab({ Title = "Godmode", Icon = "skull" }),
     Misc = Window:Tab({ Title = "Bypass Anticheat", Icon = "gift" }),
     Esp = Window:Tab({ Title = "Diamond Farm", Icon = "eye" }),
@@ -37,17 +37,26 @@ local Tabs = {
 
 
 
+Tabs.AutoDays:Section({
+    Title = "Auto Potion",
+    Icon = "wine",
+})
+
 Tabs.AutoDays:Toggle({
-    Title = "Enable Godmode",
+    Title = "Potion Fill",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
     end,
 })
 
+Tabs.AutoDays:Section({
+    Title = "Auto Win Game",
+    Icon = "crown",
+})
 
 Tabs.AutoDays:Toggle({
-    Title = "Enable Troll Other Players",
+    Title = "Enable Godmode",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
