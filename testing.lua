@@ -51,8 +51,8 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Section({
-    Title = "Auto Win Game",
-    Icon = "crown",
+    Title = "Best Features",
+    Icon = "gem",
 })
 
 Tabs.AutoDays:Toggle({
@@ -64,15 +64,10 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Button({
-    Title = "Auto Save All Children",
+    Title = "Enable God Mode Anti Hunger",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
 })
 
-Tabs.AutoDays:Button({
-    Title = "Diamond Farm",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
-    end,
-})
+
