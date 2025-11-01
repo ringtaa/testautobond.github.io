@@ -38,12 +38,12 @@ local Tabs = {
 
 
 Tabs.AutoDays:Section({
-    Title = "Auto Potion",
-    Icon = "wine",
+    Title = "Haunted Maze",
+    Icon = "venetian-mask",
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Potion Fill",
+    Title = "Auto Win Maze",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -56,7 +56,7 @@ Tabs.AutoDays:Section({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Enable Godmode",
+    Title = "Revive Everyone (FREE)",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -71,7 +71,7 @@ Tabs.AutoDays:Button({
 })
 
 Tabs.AutoDays:Button({
-    Title = "Diamond Farm Fast",
+    Title = "Diamond Farm",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
