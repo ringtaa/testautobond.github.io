@@ -12,7 +12,7 @@ local Window = WindUI:CreateWindow({
     Icon = "star",
     Author = "discord.gg/ringta",
     Theme = "Dark",
-    Size = UDim2.fromOffset(500, 350),
+    Size = UDim2.fromOffset(500, 420),
     HasOutline = true,
 })
 
@@ -38,12 +38,20 @@ local Tabs = {
 
 
 Tabs.AutoDays:Section({
-    Title = "Haunted Maze",
+    Title = "Infinite",
     Icon = "venetian-mask",
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Auto Win Maze",
+    Title = "Infinite Saplings Dupe",
+    Default = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
+    end,
+})
+
+Tabs.AutoDays:Toggle({
+    Title = "Infinite Gems Dupe",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -56,6 +64,14 @@ Tabs.AutoDays:Section({
 })
 
 Tabs.AutoDays:Toggle({
+    Title = "Auto Save Deer",
+    Default = false,
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
+    end,
+})
+
+Tabs.AutoDays:Toggle({
     Title = "Revive Everyone (FREE)",
     Default = false,
     Callback = function()
@@ -63,8 +79,10 @@ Tabs.AutoDays:Toggle({
     end,
 })
 
+
+
 Tabs.AutoDays:Button({
-    Title = "Enable God Mode Anti Hunger",
+    Title = "Spawn Admin Axe",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
