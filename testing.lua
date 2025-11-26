@@ -38,12 +38,12 @@ local Tabs = {
 
 
 Tabs.AutoDays:Section({
-    Title = "Infinite",
+    Title = "Infinite Saplings",
     Icon = "venetian-mask",
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Infinite Saplings Dupe",
+    Title = "SkyBase Infinite Saplings Dupe",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -64,7 +64,7 @@ Tabs.AutoDays:Section({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Auto Save Deer",
+    Title = "Get All Classes",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -80,12 +80,9 @@ Tabs.AutoDays:Toggle({
 })
 
 
-
 Tabs.AutoDays:Button({
     Title = "Spawn Admin Axe",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
 })
-
-
