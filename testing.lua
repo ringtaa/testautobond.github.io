@@ -12,7 +12,7 @@ local Window = WindUI:CreateWindow({
     Icon = "star",
     Author = "discord.gg/ringta",
     Theme = "Dark",
-    Size = UDim2.fromOffset(500, 420),
+    Size = UDim2.fromOffset(620, 460),
     HasOutline = true,
 })
 
@@ -26,12 +26,12 @@ Window:EditOpenButton({
 })
 
 local Tabs = {
-    Main = Window:Tab({ Title = "Update Party", Icon = "star" }),
+    Main = Window:Tab({ Title = "Main", Icon = "star" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
     Bring = Window:Tab({ Title = "Bring All Items", Icon = "package" }),
-    AutoDays = Window:Tab({ Title = "Auto", Icon = "sun" }),
-    KillAll = Window:Tab({ Title = "Godmode", Icon = "skull" }),
-    Misc = Window:Tab({ Title = "Bypass Anticheat", Icon = "gift" }),
+    AutoDays = Window:Tab({ Title = "Auto", Icon = "refresh-ccw" }),
+    KillAll = Window:Tab({ Title = "God Mode", Icon = "swords" }),
+    Misc = Window:Tab({ Title = "Admin Panel", Icon = "gift" }),
     Esp = Window:Tab({ Title = "Diamond Farm", Icon = "eye" }),
 }
 
@@ -39,11 +39,11 @@ local Tabs = {
 
 Tabs.AutoDays:Section({
     Title = "Infinite Saplings",
-    Icon = "venetian-mask",
+    Icon = "tree-pine",
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "SkyBase Infinite Saplings Dupe",
+    Title = "Infinite Saplings Dupe",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -60,11 +60,11 @@ Tabs.AutoDays:Toggle({
 
 Tabs.AutoDays:Section({
     Title = "Best Features",
-    Icon = "gem",
+    Icon = "chess-queen",
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Get All Classes",
+    Title = "Get Admin Panel",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
