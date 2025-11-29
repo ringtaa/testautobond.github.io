@@ -51,7 +51,7 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Infinite Gems Dupe",
+    Title = "Auto Crockpot",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
