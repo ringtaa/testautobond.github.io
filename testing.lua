@@ -51,7 +51,7 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Auto Crockpot",
+    Title = "Auto Explorer Class",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -64,7 +64,7 @@ Tabs.AutoDays:Section({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Get Admin Panel",
+    Title = "Day 12000 Farm",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -72,7 +72,7 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Revive Everyone (FREE)",
+    Title = "Rescue Lost Childs",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
