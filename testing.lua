@@ -29,7 +29,7 @@ local Tabs = {
     Main = Window:Tab({ Title = "Main", Icon = "star" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
     Bring = Window:Tab({ Title = "Bring All Items", Icon = "package" }),
-    AutoDays = Window:Tab({ Title = "Auto", Icon = "refresh-ccw" }),
+    AutoDays = Window:Tab({ Title = "Auto Day Farm", Icon = "refresh-ccw" }),
     KillAll = Window:Tab({ Title = "God Mode", Icon = "swords" }),
     Misc = Window:Tab({ Title = "Admin Panel", Icon = "gift" }),
     Esp = Window:Tab({ Title = "Diamond Farm", Icon = "eye" }),
@@ -38,12 +38,13 @@ local Tabs = {
 
 
 Tabs.AutoDays:Section({
-    Title = "Infinite Saplings",
-    Icon = "tree-pine",
+    Title = "Insane Features",
+    Icon = "message-circle-heart",
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Infinite Saplings Dupe",
+    Title = "Free Revive Yourself",
+    Icon = "heart",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -51,7 +52,8 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Auto Explorer Class",
+    Title = "Infinite Saplings Dupe",
+    Icon = "tree-pine",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -63,8 +65,11 @@ Tabs.AutoDays:Section({
     Icon = "chess-queen",
 })
 
+
+
 Tabs.AutoDays:Toggle({
-    Title = "Day 12000 Farm",
+    Title = "Auto Day Farm",
+    Icon = "calendar-check",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -72,8 +77,9 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Rescue Lost Childs",
+    Title = "Free God Mode",
     Default = false,
+    Icon = "shield-check",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
     end,
@@ -81,7 +87,9 @@ Tabs.AutoDays:Toggle({
 
 
 Tabs.AutoDays:Button({
-    Title = "Spawn Admin Axe",
+    Title = "Candy Farm Dupe",
+    IconAlign = "Left",
+    Icon = "candy",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
