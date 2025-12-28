@@ -29,7 +29,7 @@ local Tabs = {
     Main = Window:Tab({ Title = "Main", Icon = "star" }),
     Teleport = Window:Tab({ Title = "Teleport", Icon = "rocket" }),
     Bring = Window:Tab({ Title = "Bring All Items", Icon = "package" }),
-    AutoDays = Window:Tab({ Title = "Auto Day Farm", Icon = "refresh-ccw" }),
+    AutoDays = Window:Tab({ Title = "Auto Day Farm", Icon = "calendar-1" }),
     KillAll = Window:Tab({ Title = "God Mode", Icon = "swords" }),
     Misc = Window:Tab({ Title = "Admin Panel", Icon = "gift" }),
     Esp = Window:Tab({ Title = "Diamond Farm", Icon = "eye" }),
@@ -39,7 +39,7 @@ local Tabs = {
 
 Tabs.AutoDays:Section({
     Title = "Insane Features",
-    Icon = "message-circle-heart",
+    Icon = "swords",
 })
 
 Tabs.AutoDays:Toggle({
