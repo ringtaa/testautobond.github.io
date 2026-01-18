@@ -1,4 +1,4 @@
-local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/eeeiqjjj/WindUI/main/dist/main.lua"))()
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Camera = workspace.CurrentCamera
@@ -11,7 +11,7 @@ local Window = WindUI:CreateWindow({
     Title = "RINGTA SCRIPTS",
     Icon = "star",
     Author = "discord.gg/ringta",
-    Theme = "Dark",
+    Theme = "Valentine",
     Size = UDim2.fromOffset(620, 460),
     HasOutline = true,
 })
@@ -43,8 +43,8 @@ Tabs.AutoDays:Section({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Free Revive Yourself",
-    Icon = "heart",
+    Title = "Infinite Saplings Dupe",
+    Icon = "tree-pine",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -52,8 +52,8 @@ Tabs.AutoDays:Toggle({
 })
 
 Tabs.AutoDays:Toggle({
-    Title = "Infinite Saplings Dupe",
-    Icon = "tree-pine",
+    Title = "Kick All Players",
+    Icon = "shield-alert",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
@@ -66,30 +66,19 @@ Tabs.AutoDays:Section({
 })
 
 
-
 Tabs.AutoDays:Toggle({
-    Title = "Auto Day Farm",
-    Icon = "calendar-check",
+    Title = "Auto Farm Diamonds",
+    Icon = "gem",
     Default = false,
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
     end,
 })
-
-Tabs.AutoDays:Toggle({
-    Title = "Free God Mode",
-    Icon = "shield-check",
-    Default = false,
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/NEWTPTRAIN.github.io/refs/heads/main/TRAIN.LUA"))()
-    end,
-})
-
 
 Tabs.AutoDays:Button({
-    Title = "Candy Farm Dupe",
+    Title = "Unlimited CampFire Fuel",
     IconAlign = "Left",
-    Icon = "candy",
+    Icon = "flame-kindling",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
     end,
